@@ -3,25 +3,24 @@ venv/
 .venv/
 env/
 
-# Python derleme ve önbellek dosyaları
-__pycache__/
-*.py[cod]
-*$py.class
-.ipynb_checkpoints/
-
-# Veri setleri ve büyük dosyalar (Git'e yüklenmez)
+# Veri Seti (Kesinlikle git'e gönderilmemeli)
 dataset/
-raw_dataset/
-*.zip
-*.tar.gz
+data/
 
-# Model ağırlıkları ve geçici çıktılar
+# Model Ağırlıkları ve Checkpointler
+models/*.pth
+models/*.pt
+models/*.onnx
 *.pth
 *.pt
-*.onnx
-runs/
-mlruns/
 
-# Sistem ve IDE dosyaları
+# Jupyter ve Python Geçici Dosyaları
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# IDE ve İşletim Sistemi
 .vscode/
+.idea/
+Thumbs.db
 .DS_Store
