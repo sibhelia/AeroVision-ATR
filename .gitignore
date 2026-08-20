@@ -1,0 +1,27 @@
+# Sanal Ortam
+venv/
+.venv/
+env/
+
+# Python derleme ve önbellek dosyaları
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Veri setleri ve büyük dosyalar (Git'e yüklenmez)
+dataset/
+raw_dataset/
+*.zip
+*.tar.gz
+
+# Model ağırlıkları ve geçici çıktılar
+*.pth
+*.pt
+*.onnx
+runs/
+mlruns/
+
+# Sistem ve IDE dosyaları
+.vscode/
+.DS_Store
